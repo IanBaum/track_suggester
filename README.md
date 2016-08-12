@@ -13,7 +13,7 @@ _This webpage was designed to help anyone looking to join Epicodus figure out wh
 * _Clone this Repository_
 * _open index.html in the browser of your choice_
 * _You can also view the project at:_
-* https://github.com/IanBaum/track_suggester.git
+* https://ianbaum.github.io/track_suggester
 
 ## Known Bugs
 
