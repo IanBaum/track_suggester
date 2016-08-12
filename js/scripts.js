@@ -42,8 +42,8 @@ $(document).ready(function(){
   $("#userInfo").submit(function(event){
     event.preventDefault();
     var name = $("#userName").val().toLowerCase().replace(/\b[a-z]/g, function(letter){return letter.toUpperCase();});
-    var language = 0;
-    var app = 0;
+    var language = "";
+    var app = "";
 
     $("#name").text(name);
     $("#language").text(language);
