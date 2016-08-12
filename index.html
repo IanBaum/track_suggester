@@ -19,7 +19,7 @@
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Ian Baum</a>
+            <a class="navbar-brand" href="#">Epicodus Track Suggester</a>
           </div> <!-- end navbar-header -->
           <div class="collapse navbar-collapse" id="navbarUl">
             <ul class="nav navbar-nav navbar-right">
@@ -40,6 +40,16 @@
             </div>
             <!-- Question1 -->
             <div class="form-group"id="question1">
+              <label for="userName">Where are you thinking of attending?</label>
+              <select class = "form-control" id="location">
+                <option selected disabled>Choose one</opton>
+                <option value="0">Portland</opton>
+                <option value="1">Seattle</opton>
+                <option value="2">Philadelphia</opton>
+              </select>
+            </div>
+            <!-- Question2 -->
+            <div class="form-group"id="question2">
               <label for="userName">Do you think you want to build software or websites?</label>
               <select class = "form-control" id="softOrWeb">
                 <option selected disabled>Choose one</opton>
@@ -47,17 +57,18 @@
                 <option value="1">Websites</opton>
               </select>
             </div>
-            <!-- Question2 -->
-            <div class="form-group"id="question2">
+            <!-- Question3 -->
+            <div class="form-group"id="question3">
               <label for="userName">Would you want to work with desktop or mobile?</label>
               <select class = "form-control" id="desktopOrMobile">
                 <option selected disabled>Choose one</opton>
                 <option value="0">Desktop</opton>
                 <option value="1">Mobile</opton>
+                <option value="2">Both</opton>
               </select>
             </div>
-            <!-- Question3 -->
-            <div class="form-group"id="question3">
+            <!-- Question4 -->
+            <div class="form-group"id="question4">
               <label for="userName">Do you want to figure out how something looks, or how it works?</label>
               <select class = "form-control" id="frontOrBack">
                 <option selected disabled>Choose one</opton>
@@ -65,8 +76,8 @@
                 <option value="1">How it works</opton>
               </select>
             </div>
-            <!-- Question4 -->
-            <div class="form-group"id="question4">
+            <!-- Question5 -->
+            <div class="form-group"id="question5">
               <label for="userName">Do you want to make apps with a lot of user input?</label>
               <select class = "form-control" id="interactiveData">
                 <option selected disabled>Choose one</opton>
@@ -74,8 +85,8 @@
                 <option value="1">No</opton>
               </select>
             </div>
-            <!-- Question5 -->
-            <div class="form-group"id="question5">
+            <!-- Question6 -->
+            <div class="form-group"id="question6">
               <label for="userName">Do you like the idea of making websites with a lot of data to manage?</label>
               <select class = "form-control" id="dataManage">
                 <option selected disabled>Choose one</opton>
@@ -96,7 +107,7 @@
           </form>
         </div> <!-- end questionJumbo -->
         <div id="answerJumbo" class="col-sm-8 col-sm-push-2 jumbotron">
-          <h2><span id="name"></span>, you should take the <span id="language"></span> track! That will help you make <span id="app"></span>!</h2>
+          <h2><span id="name"></span>, you should take the <strong><span id="language"></span></strong> track! That will help you make <span id="app"></span>!</h2>
           <div class="row">
             <div class="col-sm-1">
               <button id="resetBtn" class="btn btn-primary">Again!</button>

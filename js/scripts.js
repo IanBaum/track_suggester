@@ -41,17 +41,36 @@ $(document).ready(function(){
   // Done button
   $("#userInfo").submit(function(event){
     event.preventDefault();
+
+    var softOrWeb = parseInt($("#softOrWeb").val());
+    var desktopOrMobile = parseInt($("#desktopOrMobile").val());
+    var frontOrBack = parseInt($("#frontOrBack").val());
+    var interactiveData = parseInt($("#interactiveData").val());
+    var dataManage = parseInt($("#dataManage").val());
+    var location = parseInt($("#location").val())
+    if(location < 2){ //if location is not philly
+      if(softOrWeb === 0){ //if software check for mobile or desktop
+        if(desktopOrMobile === 0){ //if desktop set track to C#
+          trackIndex = 0;
+        }else if(desktopOrMobile === 0){ //if mobile or both set track to Java
+          trackIndex = 2;
+        }else{
+          trackIndex = 2;
+        }
+      }else if(frontOrBack === 0){ // if website and frontend set CSS
+        trackIndex = 1;
+      }else if(interactiveData === 0){ //if websitea and interactive set Ruby
+        trackIndex = 4;
+      }else{ //otherwise choose php
+        trackIndex = 3;
+      }
+    }else{ //if location is philly
+      trackIndex = 3;
+    }
+
     var name = $("#userName").val().toLowerCase().replace(/\b[a-z]/g, function(letter){return letter.toUpperCase();});
     var language = tracks[trackIndex];
     var app = apps[trackIndex];
-
-    var= softOrWeb = parseInt($("#softOrWeb").val());
-    var= desktopOrMobile = parseInt($("#sdesktopOrMobile").val());
-    var= frontOrBack = parseInt($("#frontOrBack").val());
-    var= interactiveData = parseInt($("#interactiveData").val());
-    var= dataManage = parseInt($("#dataManage").val());
-
-    if()
 
     $("#name").text(name);
     $("#language").text(language);

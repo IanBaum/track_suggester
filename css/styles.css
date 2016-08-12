@@ -4,7 +4,7 @@ h1{
 label{
   font-size:2em;
 }
-#answerJumbo, #question1, #question2, #question3, #question4, #question5, #prevBtn, #doneBtn {
+#answerJumbo, #question1, #question2, #question3, #question4, #question5, #question6, #prevBtn, #doneBtn {
   display: none;
 }
 .btn{
