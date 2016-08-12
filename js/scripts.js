@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var questionIndex = 0;
 
-  var  questions = ["#userNameDiv","#userTestDiv"]
+  var  questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5",]
 
   // Next button
   $("#nextBtn").click(function(event){
@@ -33,12 +33,24 @@ $(document).ready(function(){
      $("#prevBtn").hide();
    }
   });
-  
+
   // Done button
   $("#userInfo").submit(function(event){
     event.preventDefault();
-    var name = $("#userName").val();
+    var name = $("#userName").val().toLowerCase().replace(/\b[a-z]/g, function(letter){return letter.toUpperCase();});
+    var language = 0;
+    var app = 0;
 
-    console.log(name);
+    $("#name").text(name);
+    $("#language").text(language);
+    $("#app").text(app);
+
+    $("#questionJumbo").hide();
+    $("#answerJumbo").show();
+  });
+  // Reset button
+  $("#resetBtn").click(function(event){
+    event.preventDefault();
+    history.go(0);
   });
 });

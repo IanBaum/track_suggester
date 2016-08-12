@@ -31,31 +31,36 @@
       <!-- start Main Content -->
       <h1>Track Suggester</h1>
       <div class="row">
-        <div class="col-sm-8 col-sm-push-2 jumbotron">
+        <div id="questionJumbo" class="col-sm-8 col-sm-push-2 jumbotron">
           <form id="userInfo">
-            <!-- Question1 -->
+            <!-- Gather Name -->
             <div class="form-group"id="userNameDiv">
-              <label for="userName">Please enter your first name:</label>
+              <label for="userName">Please enter your name:</label>
+              <input type="text" class="form-control" id="userName" placeholder="Name">
+            </div>
+            <!-- Question1 -->
+            <div class="form-group"id="question1">
+              <label for="userName">Q1 Text</label>
               <input type="text" class="form-control" id="userName">
             </div>
             <!-- Question2 -->
-            <div class="form-group"id="userNameDiv">
-              <label for="userName">Please enter your first name:</label>
+            <div class="form-group"id="question2">
+              <label for="userName">Q2 Text</label>
               <input type="text" class="form-control" id="userName">
             </div>
             <!-- Question3 -->
-            <div class="form-group"id="userNameDiv">
-              <label for="userName">Please enter your first name:</label>
+            <div class="form-group"id="question3">
+              <label for="userName">Q3 Text</label>
               <input type="text" class="form-control" id="userName">
             </div>
             <!-- Question4 -->
-            <div class="form-group"id="userNameDiv">
-              <label for="userName">Please enter your first name:</label>
+            <div class="form-group"id="question4">
+              <label for="userName">Q4 Text</label>
               <input type="text" class="form-control" id="userName">
             </div>
             <!-- Question5 -->
-            <div class="form-group"id="userNameDiv">
-              <label for="userName">Please enter your first name:</label>
+            <div class="form-group"id="question5">
+              <label for="userName">Q5 Text</label>
               <input type="text" class="form-control" id="userName">
             </div>
             <!-- Buttons -->
@@ -69,7 +74,15 @@
               </div>
             </div> <!-- end inner row -->
           </form>
-        </div> <!-- end jumbotron -->
+        </div> <!-- end questionJumbo -->
+        <div id="answerJumbo" class="col-sm-8 col-sm-push-2 jumbotron">
+          <h1><span id="name"></span>, you should take the <span id="language"></span> track! That will help you make <span id="app"></span>!</h1>
+          <div class="row">
+            <div class="col-sm-1">
+              <button id="resetBtn" class="btn btn-primary">Again!</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div> <!-- end container -->
   </body>
