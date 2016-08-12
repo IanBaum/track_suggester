@@ -3,7 +3,7 @@ $(document).ready(function(){
   var questionIndex = 0;
   var trackIndex = 0;
 
-  var questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5",]
+  var questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5","#question6"]
   var tracks = ["C#/.NET", "CSS/Design", "Java/Android", "PHP/Drupal", "Ruby/Rails"]
   var apps = ["in house buisness software", "user interfaces for websites and apps", "android and enterprise apps", "content heavy websites", "interactive websites"]
   var trackImgs1 = ["img/c-sharp.png", "img/css.png", "img/java.png", "img/php.png", "img/ruby.png"];
@@ -12,13 +12,13 @@ $(document).ready(function(){
   // Next button
   $("#nextBtn").click(function(event){
     event.preventDefault();
-    if(questionIndex < questions.length - 1){
+    if(questionIndex < questions.length - 1 ){
       $(questions[questionIndex]).hide();
       questionIndex++;
       $(questions[questionIndex]).show();
       $("#prevBtn").show();
     }
-    if(questionIndex === questions.length -1){
+    if(questionIndex === questions.length - 1){
      $("#nextBtn").hide();
      $("#doneBtn").show();
      $("nameError").hide();
@@ -62,10 +62,12 @@ $(document).ready(function(){
         }
       }else if(frontOrBack === 0){ // if website and frontend set CSS
         trackIndex = 1;
-      }else if(interactiveData === 0){ //if websitea and interactive set Ruby
+      }else if(interactiveData === 0){ //if website and interactive set Ruby
         trackIndex = 4;
-      }else{ //otherwise choose php
+      }else if(dataManage === 0){ //if website and datamange set php
         trackIndex = 3;
+      }else{ //otherwise choose java
+        trackIndex = 2;
       }
     }else{ //if location is philly
       trackIndex = 3;
