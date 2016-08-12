@@ -1,5 +1,11 @@
+html, body{
+  height:100%;
+}
+
 body{
   color: white;
+  background-color: #4DCACB;
+
 }
 
 h1{
@@ -15,6 +21,10 @@ label{
   display: none;
 }
 
+#language{
+  color: #9bffff
+}
+
 .btn{
   margin-top: 50%;
 }
@@ -25,4 +35,10 @@ label{
   background-color: #4DCACB;
   border:none;
   outline:none;
+}
+
+.container{
+  background-color: white;
+  height: 100%;
+  min-height: 100%;
 }
