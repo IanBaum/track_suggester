@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <!-- start Navbar -->
-      <nav class="navbar navbar-inverse">
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
           <!-- start navbar-header -->
           <div class="navbar-header">
@@ -23,7 +23,7 @@
           </div> <!-- end navbar-header -->
           <div class="collapse navbar-collapse" id="navbarUl">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Reset</a></li>
+              <li><a  id="resetNav"href="#">Reset</a></li>
             </ul>
           </div>
         </div> <!-- end navbar container-fluid -->
@@ -37,6 +37,7 @@
             <div class="form-group"id="userNameDiv">
               <label for="userName">Please enter your name:</label>
               <input type="text" class="form-control" id="userName" placeholder="Name">
+              <p id="nameError">Name required to continue</p>
             </div>
             <!-- Question1 -->
             <div class="form-group"id="question1">
