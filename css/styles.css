@@ -21,22 +21,22 @@ label{
   display: none;
 }
 
-#language{
-  color: #9bffff
+#questionJumbo{
+  background-color: #00B3B4;
 }
-
+#answerJumbo{
+  border:2px solid #00B3B4;
+  background-color: white;
+  color: #00B3B4;
+}
 .btn{
   margin-top: 50%;
-}
-.jumbotron{
-  background-color: #00B3B4;
 }
 .btn-primary, .btn-primary:hover,.btn-primary:active, .btn-primary:focus{
   background-color: #4DCACB;
   border:none;
   outline:none;
 }
-
 .container{
   background-color: white;
   height: 100%;
