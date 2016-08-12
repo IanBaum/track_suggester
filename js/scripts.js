@@ -9,8 +9,8 @@ $(document).ready(function(){
   var questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5",]
   var tracks = ["C#/.NET", "CSS/Design", "Java/Android", "PHP/Drupal", "Ruby/Rails"]
   var apps = ["in house buisness software", "user interfaces for websites and apps", "android and enterprise apps", "content heavy websites", "interactive websites"]
-  var trackImg1 = ["img/c-sharp.png", "img/css.png", "img/java.png", "img/php.png", "img/ruby.png"];
-var trackImg1 = ["img/dot-net.png", "img/design.png", "img/android.png", "img/drupal.png", "img/rails.png"];
+  var trackImgs1 = ["img/c-sharp.png", "img/css.png", "img/java.png", "img/php.png", "img/ruby.png"];
+  var trackImgs2 = ["img/dot-net.png", "img/design.png", "img/android.png", "img/drupal.png", "img/rails.png"];
   // Next button
   $("#nextBtn").click(function(event){
     event.preventDefault();
@@ -74,10 +74,14 @@ var trackImg1 = ["img/dot-net.png", "img/design.png", "img/android.png", "img/dr
       var name = $("#userName").val().toLowerCase().replace(/\b[a-z]/g, function(letter){return letter.toUpperCase();});
     var language = tracks[trackIndex];
     var app = apps[trackIndex];
+    var img1 = trackImgs1[trackIndex];
+    var img2 = trackImgs2[trackIndex];
 
     $("#name").text(name);
     $("#language").text(language);
     $("#app").text(app);
+    $("#trackImg1").attr("src", img1);
+    $("#trackImg2").attr("src", img2);
 
     $("#questionJumbo").hide();
     $("#answerJumbo").show();
