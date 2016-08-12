@@ -1,8 +1,12 @@
 $(document).ready(function(){
 
   var questionIndex = 0;
+  var trackIndex = 0;
+  var appIndex = 0;
 
-  var  questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5",]
+  var questions = ["#userNameDiv","#question1","#question2","#question3","#question4","#question5",]
+  var tracks = ["C#/.NET", "CSS/Design", "Java/Android", "PHP/Drupal", "Ruby/Rails"]
+  var apps = ["in house buisness software", "user interfaces for websites and apps", "android and enterprise apps", "content heavy websites", "interactive websites"]
 
   // Next button
   $("#nextBtn").click(function(event){
