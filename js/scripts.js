@@ -42,8 +42,16 @@ $(document).ready(function(){
   $("#userInfo").submit(function(event){
     event.preventDefault();
     var name = $("#userName").val().toLowerCase().replace(/\b[a-z]/g, function(letter){return letter.toUpperCase();});
-    var language = "";
-    var app = "";
+    var language = tracks[trackIndex];
+    var app = apps[trackIndex];
+
+    var= softOrWeb = parseInt($("#softOrWeb").val());
+    var= desktopOrMobile = parseInt($("#sdesktopOrMobile").val());
+    var= frontOrBack = parseInt($("#frontOrBack").val());
+    var= interactiveData = parseInt($("#interactiveData").val());
+    var= dataManage = parseInt($("#dataManage").val());
+
+    if()
 
     $("#name").text(name);
     $("#language").text(language);
